@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP NAME -->
+    <string name="app_name">Radio UAA</string>
+    <!-- SETTINGS -->
+    <string name="action_settings">Menu</string>
+    <!-- SPLASHVIEW -->
+    <string name="title_activity_splash">Radio UAA</string>
+    <!-- SIDEMENU -->
+    <string-array name="menu_options">
+        <item>Radio UAA</item>
+        <item>Radio Online</item>
+        <item>Podcast</item>
+        <item>Orden Alfabético</item>
+        <item>Ordenar por Fecha</item>
+        <item>Parrilla</item>
+        <item>Contacto</item>
+    </string-array>
+
+    <string name="menu_open">Open Menu</string>
+    <string name="menu_close">Close Menu</string>
+    <string name="menu_item">Menu Option</string>
+    <!-- SEARCH -->
+    <string name="action_search">Buscar</string>
+    <!-- program_detail -->
+    <string name="program_detail_title">Programación</string>
+    <string name="program_detail_banner_d">Banner</string>
+    <string name="program_detail_social">Ficha Técnica</string>
+    <string name="program_detail_info_one">Periodicidad:</string>
+    <string name="program_detail_info_two">Tipo de producción:</string>
+    <string name="program_detail_info_tree">Productor:</string>
+    <string name="program_detail_detail">Detalles Creativos</string>
+    <string name="program_detail_chapter_label">Capítulos</string>
+    <!-- PROGRAMMING -->
+    <string name="title_left">Radio Online</string>
+    <string name="title_rigth">Programas</string>
+    <string name="programming_label">Radio Online</string>
+    <string name="programming_image">image</string>
+    <string name="contact_label">Radio Online</string>
+    <string name="contact_image">image</string>
+    <string name="contact_title_rigth">Contacto</string>
+    <string name="contact_uaa">Universidad Autónoma\nde Aguascalientes</string>
+    <string name="contact_dep">Dirección General de Difusión y Vinculación\nDepartamento de Radio y Televisión</string>
+    <string name="contact_phone">Tel.+52 (449) 912 15 88, 910 74 55 y 910 74 59\ncorreo:xhuaafm@correo.uaa.mx \n\nHorarios en Cabina:\nLun-Vier 7:00 a 24:00 hrs.\n\nHorarios en Oficina:\nLun-Vier 8:00 a 15:30 hrs.</string>
+    <string name="contact_address">Av.Universidad #940, Ciudad Universitaria C.P. 20131 Aguascalientes,Ags. México Edificio 14 Unidad José Dávila Rodríguez, Radio Universitaria\n</string>
+    <string name="schedule_label">Horario:</string>
+    <string name="type_label">Tipo de producción:</string>
+    <string name="schedule_repeat_label">Repetición:</string>
+    <string name="program_detail_synopsis_label">Sinopsis:</string>
+    <string name="title_activity_Radioonline">RadioOnlineActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- ALERTS -->
+    <string name="alert_title">Error de conexion</string>
+    <string name="alert_content">Desea intentarlo de nuevo?</string>
+    <string name="alert_acept">Aceptar</string>
+    <string name="alert_cancel">Cancelar</string>
+    <string name="title_activity_radio_online">RadioOnlineActivity</string>
+    
+     <string name="json">
+         {\"weekly_programmation\":[
+         	[<!--DOMINGO-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"9:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"19:00:00\",\"end_time\":\"19:30:00\",\"program_name\":\"Mal Perro\"}
+         	],
+         	[<!--LUNES-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"9:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"09:00:00\",\"end_time\":\"10:30:00\",\"program_name\":\"VANGUAARDIA\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"10:30:00\",\"end_time\":\"11:00:00\",\"program_name\":\"Detalles Creativos\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"11:00:00\",\"end_time\":\"12:00:00\",\"program_name\":\"La Granja\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"12:00:00\",\"end_time\":\"13:00:00\",\"program_name\":\"Red ANUIES\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"13:00:00\",\"end_time\":\"14:00:00\",\"program_name\":\"Clave Forense\"},
+         		{\"kaltura_id\":\"0_45btalvm\",\"start_time\":\"16:00:00\",\"end_time\":\"15:00:00\",\"program_name\":\"Coctel de la Ciencia\"},
+         		{\"kaltura_id\":\"0_45btalvm\",\"start_time\":\"17:00:00\",\"end_time\":\"18:00:00\",\"program_name\":\"Dinastía Gallos\"}
+         	],
+         	[<!--MARTES-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"9:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"10:00:00\",\"end_time\":\"11:00:00\",\"program_name\":\"Dinastía Gallos\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"11:00:00\",\"end_time\":\"12:00:00\",\"program_name\":\"CORT-ARTE\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"12:00:00\",\"end_time\":\"13:00:00\",\"program_name\":\"Si se calla el cantor\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"13:00:00\",\"end_time\":\"14:00:00\",\"program_name\":\"Clave Forense\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"14:00:00\",\"end_time\":\"15:00:00\",\"program_name\":\"Club de Jazz Ramo 33\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"15:00:00\",\"end_time\":\"16:00:00\",\"program_name\":\"Luz para la Humanidad\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"16:00:00\",\"end_time\":\"17:00:00\",\"program_name\":\"Coctel de la Ciencia\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"17:00:00\",\"end_time\":\"18:00:00\",\"program_name\":\"Mal Perro\"}
+         	],
+         	[<!--MIERCOLES-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"9:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"12:00:00\",\"end_time\":\"13:00:00\",\"program_name\":\"Club de Jazz Ramo 33\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"13:00:00\",\"end_time\":\"14:00:00\",\"program_name\":\"Clave Forense\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"14:00:00\",\"end_time\":\"15:00:00\",\"program_name\":\"Coctel de la Ciencia\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"15:00:00\",\"end_time\":\"16:00:00\",\"program_name\":\"Dinastía Gallos\"}
+         	],
+         	[<!--JUEVES-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"9:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"13:00:00\",\"end_time\":\"14:30:00\",\"program_name\":\"Dinastía Gallos\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"14:30:00\",\"end_time\":\"15:00:00\",\"program_name\":\"Coctel de la Ciencia\"},
+         	],
+         	[<!--VIERNES-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"09:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_hywzn7sn\",\"start_time\":\"11:30:00\",\"end_time\":\"13:00:00\",\"program_name\":\"Mal Perro\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"13:00:00\",\"end_time\":\"14:00:00\",\"program_name\":\"Clave Forense\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"16:00:00\",\"end_time\":\"17:00:00\",\"program_name\":\"Coctel de la Ciencia\"}
+         	],
+         	[<!--SABADO-->
+         		{\"kaltura_id\":\"0_cvroayc8\",\"start_time\":\"08:00:00\",\"end_time\":\"9:00:00\",\"program_name\":\"UAA Noticias\"},
+         		{\"kaltura_id\":\"0_op3xivd6\",\"start_time\":\"09:00:00\",\"end_time\":\"10:00:00\",\"program_name\":\"Detalles Creativos\"}
+         	]
+         ]}
+      </string>
+     <string name="app_id">670959386367786</string>
+    
+</resources>

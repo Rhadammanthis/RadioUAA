@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/grill_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/grill_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/grill_title_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="Parrilla"
+                    android:textColor="@color/green_low" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/green_medium"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/grill_title_rigth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/green_medium"
+                    android:gravity="center"
+                    android:text="fecha"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/grill_image_rigth"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/t_title" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    
+
+            <HorizontalScrollView
+                android:id="@+id/grill_days"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/grill_title"
+                android:layout_weight="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green_medium"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/grill_day_monday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_monday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Lunes"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grill_day_tuesday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_tuesday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Martes"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grill_day_wednesday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_wednesday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Miércoles"
+                android:textSize="12sp" />
+            
+             <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grill_day_thursday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="2dp"
+                 android:layout_alignParentTop="false"
+                 android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_thursday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Jueves"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grill_day_friday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_friday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Viernes"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/grill_day_saturday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_saturday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Sábado"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/grill_day_sunday"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grill_day_sunday_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Domingo"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+
+       
+
+    </LinearLayout>
+ </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/grill_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/grill_days"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true" >
+
+    </ListView>
+
+</RelativeLayout>

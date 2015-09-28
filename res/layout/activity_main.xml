@@ -1,0 +1,38 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_layout"
+    android:layout_width="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        
+        <ProgressBar
+            android:id="@+id/marker_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminate="true"
+            android:visibility="gone" />
+        
+     </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_menu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:listSelector="@color/green_low"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+   
+    
+</android.support.v4.widget.DrawerLayout>

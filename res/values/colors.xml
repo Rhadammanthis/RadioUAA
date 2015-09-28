@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="green_dark" type="color">#05A15D</item>
+    <item name="green_medium" type="color">#57E3B3</item>
+    <item name="green_l" type="color">#01e873</item>
+    <item name="green_low" type="color">#A9FFE1</item>
+    <item name="gray" type="color">#272727</item>
+    <item name="gray_clear" type="color">#5e5f5e</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="black" type="color">#000000</item>
+</resources>
