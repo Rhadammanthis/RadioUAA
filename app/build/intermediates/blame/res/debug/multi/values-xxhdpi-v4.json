@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 55,
+                    "endOffset": 220
+                },
+                "from": {
+                    "file": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 55,
+                        "endOffset": 259
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 225,
+                    "endColumn": 43,
+                    "endOffset": 264
+                },
+                "from": {
+                    "file": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 265,
+                        "endColumn": 43,
+                        "endOffset": 304
+                    }
+                }
+            }
+        ]
+    }
+]

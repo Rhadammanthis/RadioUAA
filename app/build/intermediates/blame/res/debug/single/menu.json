@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tvonline.xml",
+        "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\menu\\tvonline.xml"
+    },
+    {
+        "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\menu\\splash.xml",
+        "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\menu\\splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\menu\\radio_online.xml",
+        "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\menu\\radio_online.xml"
+    }
+]

@@ -1,0 +1,421 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ._.classpath
+* ._.project
+* ._.settings
+* ._AndroidManifest.xml
+* ._assets
+* ._bin
+* ._doc
+* ._gen
+* ._ic_launcher-web.png
+* ._libs
+* ._proguard-project.txt
+* ._project.properties
+* ._res
+* ._src
+* .gitignore
+* README.md
+* doc\
+* doc\._allclasses-frame.html
+* doc\._allclasses-noframe.html
+* doc\._com
+* doc\._constant-values.html
+* doc\._deprecated-list.html
+* doc\._help-doc.html
+* doc\._index-files
+* doc\._index.html
+* doc\._overview-frame.html
+* doc\._overview-summary.html
+* doc\._overview-tree.html
+* doc\._package-list
+* doc\._resources
+* doc\._stylesheet.css
+* doc\allclasses-frame.html
+* doc\allclasses-noframe.html
+* doc\com\
+* doc\com\._triolabs
+* doc\com\triolabs\
+* doc\com\triolabs\._adapter
+* doc\com\triolabs\._asynctask
+* doc\com\triolabs\._fragment
+* doc\com\triolabs\._kaltura
+* doc\com\triolabs\._model
+* doc\com\triolabs\._radio_uaa_android
+* doc\com\triolabs\._social
+* doc\com\triolabs\._util
+* doc\com\triolabs\._webservice
+* doc\com\triolabs\adapter\
+* doc\com\triolabs\adapter\._GrillAdapter.html
+* doc\com\triolabs\adapter\._LastChapterAdapter.html
+* doc\com\triolabs\adapter\._MenuAdapter.html
+* doc\com\triolabs\adapter\._ProgramDetailAdapter.html
+* doc\com\triolabs\adapter\._ProgrammingAdapter.html
+* doc\com\triolabs\adapter\._class-use
+* doc\com\triolabs\adapter\._package-frame.html
+* doc\com\triolabs\adapter\._package-summary.html
+* doc\com\triolabs\adapter\._package-tree.html
+* doc\com\triolabs\adapter\._package-use.html
+* doc\com\triolabs\adapter\GrillAdapter.html
+* doc\com\triolabs\adapter\LastChapterAdapter.html
+* doc\com\triolabs\adapter\MenuAdapter.html
+* doc\com\triolabs\adapter\ProgramDetailAdapter.html
+* doc\com\triolabs\adapter\ProgrammingAdapter.html
+* doc\com\triolabs\adapter\class-use\
+* doc\com\triolabs\adapter\class-use\._GrillAdapter.html
+* doc\com\triolabs\adapter\class-use\._LastChapterAdapter.html
+* doc\com\triolabs\adapter\class-use\._MenuAdapter.html
+* doc\com\triolabs\adapter\class-use\._ProgramDetailAdapter.html
+* doc\com\triolabs\adapter\class-use\._ProgrammingAdapter.html
+* doc\com\triolabs\adapter\class-use\GrillAdapter.html
+* doc\com\triolabs\adapter\class-use\LastChapterAdapter.html
+* doc\com\triolabs\adapter\class-use\MenuAdapter.html
+* doc\com\triolabs\adapter\class-use\ProgramDetailAdapter.html
+* doc\com\triolabs\adapter\class-use\ProgrammingAdapter.html
+* doc\com\triolabs\adapter\package-frame.html
+* doc\com\triolabs\adapter\package-summary.html
+* doc\com\triolabs\adapter\package-tree.html
+* doc\com\triolabs\adapter\package-use.html
+* doc\com\triolabs\asynctask\
+* doc\com\triolabs\asynctask\._GrillAnsyncTask.html
+* doc\com\triolabs\asynctask\._ImageAsyncTask.html
+* doc\com\triolabs\asynctask\._LastChapterAsyncTask.html
+* doc\com\triolabs\asynctask\._LikeAsyncTask.html
+* doc\com\triolabs\asynctask\._LoginAsyncTask.html
+* doc\com\triolabs\asynctask\._ProgrammingAnsyncTask.html
+* doc\com\triolabs\asynctask\._ProgrammingInfoAnsyncTask.html
+* doc\com\triolabs\asynctask\._class-use
+* doc\com\triolabs\asynctask\._package-frame.html
+* doc\com\triolabs\asynctask\._package-summary.html
+* doc\com\triolabs\asynctask\._package-tree.html
+* doc\com\triolabs\asynctask\._package-use.html
+* doc\com\triolabs\asynctask\GrillAnsyncTask.html
+* doc\com\triolabs\asynctask\ImageAsyncTask.html
+* doc\com\triolabs\asynctask\LastChapterAsyncTask.html
+* doc\com\triolabs\asynctask\LikeAsyncTask.html
+* doc\com\triolabs\asynctask\LoginAsyncTask.html
+* doc\com\triolabs\asynctask\ProgrammingAnsyncTask.html
+* doc\com\triolabs\asynctask\ProgrammingInfoAnsyncTask.html
+* doc\com\triolabs\asynctask\class-use\
+* doc\com\triolabs\asynctask\class-use\._GrillAnsyncTask.html
+* doc\com\triolabs\asynctask\class-use\._ImageAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\._LastChapterAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\._LikeAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\._LoginAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\._ProgrammingAnsyncTask.html
+* doc\com\triolabs\asynctask\class-use\._ProgrammingInfoAnsyncTask.html
+* doc\com\triolabs\asynctask\class-use\GrillAnsyncTask.html
+* doc\com\triolabs\asynctask\class-use\ImageAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\LastChapterAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\LikeAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\LoginAsyncTask.html
+* doc\com\triolabs\asynctask\class-use\ProgrammingAnsyncTask.html
+* doc\com\triolabs\asynctask\class-use\ProgrammingInfoAnsyncTask.html
+* doc\com\triolabs\asynctask\package-frame.html
+* doc\com\triolabs\asynctask\package-summary.html
+* doc\com\triolabs\asynctask\package-tree.html
+* doc\com\triolabs\asynctask\package-use.html
+* doc\com\triolabs\fragment\
+* doc\com\triolabs\fragment\._ContactFragment.html
+* doc\com\triolabs\fragment\._GrillFragment.html
+* doc\com\triolabs\fragment\._LastChapterFragment.html
+* doc\com\triolabs\fragment\._ProgramDetailFragment.html
+* doc\com\triolabs\fragment\._ProgrammingFragment.html
+* doc\com\triolabs\fragment\._RadioOnlineFragment.html
+* doc\com\triolabs\fragment\._SplashFragment.html
+* doc\com\triolabs\fragment\._class-use
+* doc\com\triolabs\fragment\._package-frame.html
+* doc\com\triolabs\fragment\._package-summary.html
+* doc\com\triolabs\fragment\._package-tree.html
+* doc\com\triolabs\fragment\._package-use.html
+* doc\com\triolabs\fragment\ContactFragment.html
+* doc\com\triolabs\fragment\GrillFragment.html
+* doc\com\triolabs\fragment\LastChapterFragment.html
+* doc\com\triolabs\fragment\ProgramDetailFragment.html
+* doc\com\triolabs\fragment\ProgrammingFragment.html
+* doc\com\triolabs\fragment\RadioOnlineFragment.html
+* doc\com\triolabs\fragment\SplashFragment.html
+* doc\com\triolabs\fragment\class-use\
+* doc\com\triolabs\fragment\class-use\._ContactFragment.html
+* doc\com\triolabs\fragment\class-use\._GrillFragment.html
+* doc\com\triolabs\fragment\class-use\._LastChapterFragment.html
+* doc\com\triolabs\fragment\class-use\._ProgramDetailFragment.html
+* doc\com\triolabs\fragment\class-use\._ProgrammingFragment.html
+* doc\com\triolabs\fragment\class-use\._RadioOnlineFragment.html
+* doc\com\triolabs\fragment\class-use\._SplashFragment.html
+* doc\com\triolabs\fragment\class-use\ContactFragment.html
+* doc\com\triolabs\fragment\class-use\GrillFragment.html
+* doc\com\triolabs\fragment\class-use\LastChapterFragment.html
+* doc\com\triolabs\fragment\class-use\ProgramDetailFragment.html
+* doc\com\triolabs\fragment\class-use\ProgrammingFragment.html
+* doc\com\triolabs\fragment\class-use\RadioOnlineFragment.html
+* doc\com\triolabs\fragment\class-use\SplashFragment.html
+* doc\com\triolabs\fragment\package-frame.html
+* doc\com\triolabs\fragment\package-summary.html
+* doc\com\triolabs\fragment\package-tree.html
+* doc\com\triolabs\fragment\package-use.html
+* doc\com\triolabs\kaltura\
+* doc\com\triolabs\kaltura\._Constant.html
+* doc\com\triolabs\kaltura\._Kaltura.html
+* doc\com\triolabs\kaltura\._class-use
+* doc\com\triolabs\kaltura\._package-frame.html
+* doc\com\triolabs\kaltura\._package-summary.html
+* doc\com\triolabs\kaltura\._package-tree.html
+* doc\com\triolabs\kaltura\._package-use.html
+* doc\com\triolabs\kaltura\Constant.html
+* doc\com\triolabs\kaltura\Kaltura.html
+* doc\com\triolabs\kaltura\class-use\
+* doc\com\triolabs\kaltura\class-use\._Constant.html
+* doc\com\triolabs\kaltura\class-use\._Kaltura.html
+* doc\com\triolabs\kaltura\class-use\Constant.html
+* doc\com\triolabs\kaltura\class-use\Kaltura.html
+* doc\com\triolabs\kaltura\package-frame.html
+* doc\com\triolabs\kaltura\package-summary.html
+* doc\com\triolabs\kaltura\package-tree.html
+* doc\com\triolabs\kaltura\package-use.html
+* doc\com\triolabs\model\
+* doc\com\triolabs\model\._Chapter.html
+* doc\com\triolabs\model\._ListProgram.html
+* doc\com\triolabs\model\._Program.html
+* doc\com\triolabs\model\._class-use
+* doc\com\triolabs\model\._package-frame.html
+* doc\com\triolabs\model\._package-summary.html
+* doc\com\triolabs\model\._package-tree.html
+* doc\com\triolabs\model\._package-use.html
+* doc\com\triolabs\model\Chapter.html
+* doc\com\triolabs\model\ListProgram.html
+* doc\com\triolabs\model\Program.html
+* doc\com\triolabs\model\class-use\
+* doc\com\triolabs\model\class-use\._Chapter.html
+* doc\com\triolabs\model\class-use\._ListProgram.html
+* doc\com\triolabs\model\class-use\._Program.html
+* doc\com\triolabs\model\class-use\Chapter.html
+* doc\com\triolabs\model\class-use\ListProgram.html
+* doc\com\triolabs\model\class-use\Program.html
+* doc\com\triolabs\model\package-frame.html
+* doc\com\triolabs\model\package-summary.html
+* doc\com\triolabs\model\package-tree.html
+* doc\com\triolabs\model\package-use.html
+* doc\com\triolabs\radio_uaa_android\
+* doc\com\triolabs\radio_uaa_android\._MainActivity.html
+* doc\com\triolabs\radio_uaa_android\._RadioOnlineActivity.html
+* doc\com\triolabs\radio_uaa_android\._SplashActivity.html
+* doc\com\triolabs\radio_uaa_android\._class-use
+* doc\com\triolabs\radio_uaa_android\._package-frame.html
+* doc\com\triolabs\radio_uaa_android\._package-summary.html
+* doc\com\triolabs\radio_uaa_android\._package-tree.html
+* doc\com\triolabs\radio_uaa_android\._package-use.html
+* doc\com\triolabs\radio_uaa_android\MainActivity.html
+* doc\com\triolabs\radio_uaa_android\RadioOnlineActivity.html
+* doc\com\triolabs\radio_uaa_android\SplashActivity.html
+* doc\com\triolabs\radio_uaa_android\class-use\
+* doc\com\triolabs\radio_uaa_android\class-use\._MainActivity.html
+* doc\com\triolabs\radio_uaa_android\class-use\._RadioOnlineActivity.html
+* doc\com\triolabs\radio_uaa_android\class-use\._SplashActivity.html
+* doc\com\triolabs\radio_uaa_android\class-use\MainActivity.html
+* doc\com\triolabs\radio_uaa_android\class-use\RadioOnlineActivity.html
+* doc\com\triolabs\radio_uaa_android\class-use\SplashActivity.html
+* doc\com\triolabs\radio_uaa_android\package-frame.html
+* doc\com\triolabs\radio_uaa_android\package-summary.html
+* doc\com\triolabs\radio_uaa_android\package-tree.html
+* doc\com\triolabs\radio_uaa_android\package-use.html
+* doc\com\triolabs\social\
+* doc\com\triolabs\social\._Facebook.html
+* doc\com\triolabs\social\._Twitter.html
+* doc\com\triolabs\social\._class-use
+* doc\com\triolabs\social\._package-frame.html
+* doc\com\triolabs\social\._package-summary.html
+* doc\com\triolabs\social\._package-tree.html
+* doc\com\triolabs\social\._package-use.html
+* doc\com\triolabs\social\Facebook.html
+* doc\com\triolabs\social\Twitter.html
+* doc\com\triolabs\social\class-use\
+* doc\com\triolabs\social\class-use\._Facebook.html
+* doc\com\triolabs\social\class-use\._Twitter.html
+* doc\com\triolabs\social\class-use\Facebook.html
+* doc\com\triolabs\social\class-use\Twitter.html
+* doc\com\triolabs\social\package-frame.html
+* doc\com\triolabs\social\package-summary.html
+* doc\com\triolabs\social\package-tree.html
+* doc\com\triolabs\social\package-use.html
+* doc\com\triolabs\util\
+* doc\com\triolabs\util\._AlfaComparatorChapter.html
+* doc\com\triolabs\util\._AlfaComparatorProgram.html
+* doc\com\triolabs\util\._DateComparatorChapter.html
+* doc\com\triolabs\util\._DateComparatorProgram.html
+* doc\com\triolabs\util\._DateCoverter.html
+* doc\com\triolabs\util\._Device.html
+* doc\com\triolabs\util\._FilterList.html
+* doc\com\triolabs\util\._Font.html
+* doc\com\triolabs\util\._Image.html
+* doc\com\triolabs\util\._LoaderView.html
+* doc\com\triolabs\util\._OrderList.html
+* doc\com\triolabs\util\._class-use
+* doc\com\triolabs\util\._package-frame.html
+* doc\com\triolabs\util\._package-summary.html
+* doc\com\triolabs\util\._package-tree.html
+* doc\com\triolabs\util\._package-use.html
+* doc\com\triolabs\util\AlfaComparatorChapter.html
+* doc\com\triolabs\util\AlfaComparatorProgram.html
+* doc\com\triolabs\util\DateComparatorChapter.html
+* doc\com\triolabs\util\DateComparatorProgram.html
+* doc\com\triolabs\util\DateCoverter.html
+* doc\com\triolabs\util\Device.html
+* doc\com\triolabs\util\FilterList.html
+* doc\com\triolabs\util\Font.html
+* doc\com\triolabs\util\Image.html
+* doc\com\triolabs\util\LoaderView.html
+* doc\com\triolabs\util\OrderList.html
+* doc\com\triolabs\util\class-use\
+* doc\com\triolabs\util\class-use\._AlfaComparatorChapter.html
+* doc\com\triolabs\util\class-use\._AlfaComparatorProgram.html
+* doc\com\triolabs\util\class-use\._DateComparatorChapter.html
+* doc\com\triolabs\util\class-use\._DateComparatorProgram.html
+* doc\com\triolabs\util\class-use\._DateCoverter.html
+* doc\com\triolabs\util\class-use\._Device.html
+* doc\com\triolabs\util\class-use\._FilterList.html
+* doc\com\triolabs\util\class-use\._Font.html
+* doc\com\triolabs\util\class-use\._Image.html
+* doc\com\triolabs\util\class-use\._LoaderView.html
+* doc\com\triolabs\util\class-use\._OrderList.html
+* doc\com\triolabs\util\class-use\AlfaComparatorChapter.html
+* doc\com\triolabs\util\class-use\AlfaComparatorProgram.html
+* doc\com\triolabs\util\class-use\DateComparatorChapter.html
+* doc\com\triolabs\util\class-use\DateComparatorProgram.html
+* doc\com\triolabs\util\class-use\DateCoverter.html
+* doc\com\triolabs\util\class-use\Device.html
+* doc\com\triolabs\util\class-use\FilterList.html
+* doc\com\triolabs\util\class-use\Font.html
+* doc\com\triolabs\util\class-use\Image.html
+* doc\com\triolabs\util\class-use\LoaderView.html
+* doc\com\triolabs\util\class-use\OrderList.html
+* doc\com\triolabs\util\package-frame.html
+* doc\com\triolabs\util\package-summary.html
+* doc\com\triolabs\util\package-tree.html
+* doc\com\triolabs\util\package-use.html
+* doc\com\triolabs\webservice\
+* doc\com\triolabs\webservice\._MySSLSocketFactory.html
+* doc\com\triolabs\webservice\._RESTClient.RequestMethod.html
+* doc\com\triolabs\webservice\._RESTClient.html
+* doc\com\triolabs\webservice\._class-use
+* doc\com\triolabs\webservice\._package-frame.html
+* doc\com\triolabs\webservice\._package-summary.html
+* doc\com\triolabs\webservice\._package-tree.html
+* doc\com\triolabs\webservice\._package-use.html
+* doc\com\triolabs\webservice\MySSLSocketFactory.html
+* doc\com\triolabs\webservice\RESTClient.RequestMethod.html
+* doc\com\triolabs\webservice\RESTClient.html
+* doc\com\triolabs\webservice\class-use\
+* doc\com\triolabs\webservice\class-use\._MySSLSocketFactory.html
+* doc\com\triolabs\webservice\class-use\._RESTClient.RequestMethod.html
+* doc\com\triolabs\webservice\class-use\._RESTClient.html
+* doc\com\triolabs\webservice\class-use\MySSLSocketFactory.html
+* doc\com\triolabs\webservice\class-use\RESTClient.RequestMethod.html
+* doc\com\triolabs\webservice\class-use\RESTClient.html
+* doc\com\triolabs\webservice\package-frame.html
+* doc\com\triolabs\webservice\package-summary.html
+* doc\com\triolabs\webservice\package-tree.html
+* doc\com\triolabs\webservice\package-use.html
+* doc\constant-values.html
+* doc\deprecated-list.html
+* doc\help-doc.html
+* doc\index-files\
+* doc\index-files\._index-1.html
+* doc\index-files\._index-10.html
+* doc\index-files\._index-11.html
+* doc\index-files\._index-12.html
+* doc\index-files\._index-13.html
+* doc\index-files\._index-14.html
+* doc\index-files\._index-15.html
+* doc\index-files\._index-16.html
+* doc\index-files\._index-17.html
+* doc\index-files\._index-18.html
+* doc\index-files\._index-19.html
+* doc\index-files\._index-2.html
+* doc\index-files\._index-3.html
+* doc\index-files\._index-4.html
+* doc\index-files\._index-5.html
+* doc\index-files\._index-6.html
+* doc\index-files\._index-7.html
+* doc\index-files\._index-8.html
+* doc\index-files\._index-9.html
+* doc\index-files\index-1.html
+* doc\index-files\index-10.html
+* doc\index-files\index-11.html
+* doc\index-files\index-12.html
+* doc\index-files\index-13.html
+* doc\index-files\index-14.html
+* doc\index-files\index-15.html
+* doc\index-files\index-16.html
+* doc\index-files\index-17.html
+* doc\index-files\index-18.html
+* doc\index-files\index-19.html
+* doc\index-files\index-2.html
+* doc\index-files\index-3.html
+* doc\index-files\index-4.html
+* doc\index-files\index-5.html
+* doc\index-files\index-6.html
+* doc\index-files\index-7.html
+* doc\index-files\index-8.html
+* doc\index-files\index-9.html
+* doc\index.html
+* doc\overview-frame.html
+* doc\overview-summary.html
+* doc\overview-tree.html
+* doc\package-list
+* doc\resources\
+* doc\resources\._background.gif
+* doc\resources\._tab.gif
+* doc\resources\._titlebar.gif
+* doc\resources\._titlebar_end.gif
+* doc\resources\background.gif
+* doc\resources\tab.gif
+* doc\resources\titlebar.gif
+* doc\resources\titlebar_end.gif
+* doc\stylesheet.css
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
