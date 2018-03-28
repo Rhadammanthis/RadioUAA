@@ -2,19 +2,26 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "26.0.0"
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.triolabs.radio_uaa_android"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 20
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    configurations {
+        all {
+            exclude module: 'httpclient'
+            exclude module: 'commons-logging'
         }
     }
 }
@@ -28,8 +35,8 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile 'me.relex:circleindicator:1.2.2@aar'
     compile "com.android.support:exifinterface:25.3.1"
-    compile 'com.google.http-client:google-http-client-android:+'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile 'com.google.api-client:google-api-client-android:+'
     compile 'com.google.api-client:google-api-client-gson:+'
-    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.facebook.android:facebook-android-sdk:4.25.0'
 }

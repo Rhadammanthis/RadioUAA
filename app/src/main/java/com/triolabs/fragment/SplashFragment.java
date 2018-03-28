@@ -17,6 +17,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,6 +110,9 @@ public class SplashFragment extends Fragment {
 			alert.show();
 			return;
 		}
+
+		Log.d("battles", json.toString());
+
 		HashMap<Integer,ArrayList<String>> programmation = new HashMap<Integer,ArrayList<String>>();
 		HashMap<Integer,ArrayList<String>> programmationId = new HashMap<Integer,ArrayList<String>>();
 		HashMap<Integer,ArrayList<String>> programmationHour = new HashMap<Integer,ArrayList<String>>();

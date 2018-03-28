@@ -185,7 +185,7 @@ public class ProgramDetailFragment extends Fragment implements OnClickListener {
 	@Override
 	public void onClick(View view) {
 		// TODO Auto-generated method stub
-		String urlFace="http://radio.uaa.mx/social/share.html?idProgram="+program.getIdProgram();
+		String urlFace="https://radio.uaa.mx/social/share.html?idProgram="+program.getIdProgram();
 		switch(view.getId()){
 		
 			case R.id.program_detail_twitter:

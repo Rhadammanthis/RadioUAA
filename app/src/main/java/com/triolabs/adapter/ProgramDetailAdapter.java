@@ -243,7 +243,7 @@ public class ProgramDetailAdapter extends BaseAdapter {
 		});
 		
 		ImageView shareTwitter =(ImageView)convertView.findViewById(R.id.program_detail_item_share_twitter);
-		final String urlFace="http://radio.uaa.mx/social/share.html?idProgram="+idProgram+"&idChapter="+chapter.getId();
+		final String urlFace="https://radio.uaa.mx/social/share.html?idProgram="+idProgram+"&idChapter="+chapter.getId();
 		shareTwitter.setOnClickListener(new OnClickListener(){
 
 			@Override

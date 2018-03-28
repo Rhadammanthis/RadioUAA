@@ -511,7 +511,7 @@ public class MainActivity extends ActionBarActivity {
 			chapter.setId("1");
 			chapter.setUrlChapter(Constant.KALTURA_STREAMING);
 			chapter.setNameChapter("Radio UAA");
-			chapter.setPhotoChapter("http://radio.uaa.mx/asset/img/logo_radio.png");
+			chapter.setPhotoChapter("https://radio.uaa.mx/asset/img/logo_radio.png");
 		}
 		ArrayList<Chapter> listC=new ArrayList<Chapter>();
 		listC.add(chapter);

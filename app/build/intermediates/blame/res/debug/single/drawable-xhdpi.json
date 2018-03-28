@@ -4,12 +4,12 @@
         "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\drawable-xhdpi\\radionline.png"
     },
     {
-        "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\radio.png",
-        "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\drawable-xhdpi\\radio.png"
-    },
-    {
         "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\contacto.png",
         "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\drawable-xhdpi\\contacto.png"
+    },
+    {
+        "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\radio.png",
+        "source": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\src\\main\\res\\drawable-xhdpi\\radio.png"
     },
     {
         "merged": "C:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_parrilla.png",

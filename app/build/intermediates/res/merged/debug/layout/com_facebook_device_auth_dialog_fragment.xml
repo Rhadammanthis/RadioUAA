@@ -85,7 +85,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:fontFamily="roboto_condensed"
-            android:gravity="center"
+            android:gravity="center_horizontal"
             android:singleLine="false"
             android:textColor="@color/com_facebook_device_auth_text"
             android:textSize="12sp"
@@ -111,9 +111,7 @@
                 android:textColor="@color/com_facebook_device_auth_text"
                 android:textSize="10sp"
                 android:textStyle="bold"
-                android:typeface="sans" >
-                    <requestFocus />
-            </Button>
+                android:typeface="sans" />
         </FrameLayout>
 
     </LinearLayout>

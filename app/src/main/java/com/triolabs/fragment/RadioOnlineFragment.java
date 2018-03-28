@@ -60,7 +60,7 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 	boolean play;
 	TextView textStart;
 	TextView textDuration;
-	SeekBar audioSeekBar; 
+	SeekBar audioSeekBar;
 	private final Handler handler = new Handler();
 	private int mediaFileLengthInMilliseconds;
 	ImageView imageProgram;
@@ -74,14 +74,14 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 	private boolean isFocusGranted, isFocusChanged;
 	ProgressDialog progress;
 	TextView textRigth;
-	
+
 	public RadioOnlineFragment() {
 		self=this;
 	}
-	
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_radio_online, container,
 				false);
 		progress = new ProgressDialog(self.getActivity());
@@ -110,7 +110,7 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if(currentList>0)
-				back();
+					back();
 			}});
 		nextAudio.setOnClickListener(new OnClickListener(){
 
@@ -120,12 +120,12 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 				if(currentList<limitList)
 					next();
 			}});
-		 downloadAudio.setOnClickListener(new OnClickListener(){
+		downloadAudio.setOnClickListener(new OnClickListener(){
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-					downloadAudio();
+				downloadAudio();
 			}});
 		Font font = new Font();
 		textRigth=(TextView)rootView.findViewById(R.id.radio_online_title_rigth);
@@ -143,14 +143,14 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
-					boolean fromUser) {
+										  boolean fromUser) {
 				// TODO Auto-generated method stub
 			}
 
 			@Override
 			public void onStartTrackingTouch(SeekBar seekBar) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
@@ -162,22 +162,15 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 		currentList=0;
 		return rootView;
 	}
-	
+
 	@Override
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
 		initAudioManager();
-		if(urlAudio.equals(Constant.KALTURA_STREAMING))
-			try {
-				initMediaPlayer();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
+
 	}
-	
+
 	private void downloadAudio(){
 		ListProgram listProgram = new ListProgram();
 		Chapter chapter = listProgram.getCurrentChapter();
@@ -185,9 +178,9 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 		intentDownload.setData(Uri.parse(chapter.getDownloadChapter()));
 		startActivity(intentDownload);
 	}
-	
-	
-	
+
+
+
 	private void getInfoList(){
 		ListProgram listProgram = new ListProgram();
 		listChapter= new ArrayList<Chapter>();
@@ -196,20 +189,20 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 		Log.i("limite", ""+limitList);
 		getCurrentList();
 	}
-	
+
 	private void getCurrentList(){
 		ListProgram listProgram = new ListProgram();
 		Chapter chapter = listProgram.getCurrentChapter();
 		for(int i=0;i<=limitList;i++){
 			if(listChapter.get(i).getId().equals(chapter.getId())){
-				currentList=i;	
+				currentList=i;
 				Log.i("current", ""+currentList);
 			}
 		}
 		setChapter();
 		hideControllers();
 	}
-	
+
 	private void checkLimitList(){
 		if(currentList==0){
 			backAudio.setEnabled(false);
@@ -228,11 +221,11 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 			nextAudio.setAlpha(1.0f);
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	private void setChapter(){
 		ListProgram listProgram = new ListProgram();
 		if(listProgram.isChapterExists()){
@@ -241,20 +234,18 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 				nameChapter.setText(chapter.getNameChapter());
 			else
 				nameChapter.setText(chapter.getNameChapter().subSequence(0, 27)+"...");
-			
+
 			urlAudio=chapter.getUrlChapter();
-			
-			if(!urlAudio.equals(Constant.KALTURA_STREAMING)){
-				textRigth.setText("Podcast");
-				Image image = new Image();
-				Device device = new Device();
-				Bitmap bmChapter = image.getBitmapFromMemCache(chapter.getPhotoChapter(),device.getHeigth(),device.getHeigth());
-				if(bmChapter==null){
-					ImageAsyncTask task = new ImageAsyncTask(getActivity(),imageProgram,progressBar,chapter.getPhotoChapter(),device.getWidth(),device.getHeigth(),false);
-					task.execute();
-				}else{
-					imageProgram.setImageBitmap(bmChapter);
-				}
+
+			textRigth.setText("Podcast");
+			Image image = new Image();
+			Device device = new Device();
+			Bitmap bmChapter = image.getBitmapFromMemCache(chapter.getPhotoChapter(),device.getHeigth(),device.getHeigth());
+			if(bmChapter==null){
+				ImageAsyncTask task = new ImageAsyncTask(getActivity(),imageProgram,progressBar,chapter.getPhotoChapter(),device.getWidth(),device.getHeigth(),false);
+				task.execute();
+			}else{
+				imageProgram.setImageBitmap(bmChapter);
 			}
 
 
@@ -267,17 +258,19 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 			e.printStackTrace();
 		}
 	}
-	
+
 	private void hideControllers(){
 		if(urlAudio.equals(Constant.KALTURA_STREAMING)){
 			backAudio.setEnabled(false);
 			nextAudio.setEnabled(false);
 			downloadAudio.setEnabled(false);
+//			playAudio.setEnabled(false);
+//			playAudio.setAlpha(0.5f);
 			backAudio.setAlpha(0.5f);
 			nextAudio.setAlpha(0.5f);
 			downloadAudio.setAlpha(0.5f);
 		}
-		
+
 		playAudio.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -300,164 +293,140 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 						pause();
 				}
 			}
-		       
+
 		});
 	}
-	
+
 	private void initMediaPlayer() throws IOException{
 		textStart.setText("00:00");
 		textDuration.setText("00:00");
 		playAudio.setEnabled(false);
 		audioSeekBar.setProgress(0);
 		audioSeekBar.setEnabled(false);
-		if(urlAudio.equals(Constant.KALTURA_STREAMING)){
-			if(mPlayer==null){
-				mPlayer=new MediaPlayer();	
-			}
-		}else{
-			mPlayer=new MediaPlayer();	
-		}
+
+		mPlayer = new MediaPlayer();
 		mPlayer.setOnErrorListener(self);
 		mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 		try {
-			mPlayer.setDataSource(urlAudio);
+			Log.d("DEATH", "Stream URL: " + urlAudio);
+			mPlayer.setDataSource(getActivity(), Uri.parse(urlAudio));
+			mPlayer.setOnPreparedListener(new OnPreparedListener() {
+				public void onPrepared(MediaPlayer mp) {
+					playAudio.setEnabled(true);
+					if(!urlAudio.equals(Constant.KALTURA_STREAMING))
+						audioSeekBar.setEnabled(true);
+					play();
+				}
+			});
+			mPlayer.prepareAsync();
 		} catch (IllegalArgumentException e) {
-			 e.printStackTrace();
-        } catch (SecurityException e) {
-        	 e.printStackTrace();
-        } catch (IllegalStateException e) {
-        	 e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+			Log.d("DEATH", "Illegal arguments");
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			Log.d("DEATH", "Security");
+			e.printStackTrace();
+		} catch (IllegalStateException e) {
+			Log.d("DEATH", "Illegal state");
+			e.printStackTrace();
+		} catch (IOException e) {
+			Log.d("DEATH", "IO error");
+			e.printStackTrace();
+		}
 
-		
-		mPlayer.setOnCompletionListener(new OnCompletionListener(){
 
-			@Override
-			public void onCompletion(MediaPlayer mp) {
-				// TODO Auto-generated method stub
-				next();
-				
-			}});
-		
-		try {
-            mPlayer.prepareAsync();
-            mPlayer.setOnPreparedListener(new OnPreparedListener() {
-                public void onPrepared(MediaPlayer mp) {
-                	playAudio.setEnabled(true);
-                	if(!urlAudio.equals(Constant.KALTURA_STREAMING))
-                		audioSeekBar.setEnabled(true);
-                    play();
-                }
-            });
-        } catch (IllegalStateException e) {
-            
-        }
-		/*Button stopAudio=(Button)rootView.findViewById(R.id.audioViewStop);
-		stopAudio.setOnClickListener(new OnClickListener() {
-			 
-		    public void onClick(View v) {
-		        // TODO Auto-generated method stub
-		        if(mPlayer!=null && mPlayer.isPlaying()){
-		            mPlayer.stop();
-		        }
-		    }
-		});*/
-		
-		
+
 	}
-	
+
 	private void play(){
-		 play=true;
-		 Drawable pauseImage = getResources().getDrawable(R.drawable.pause);
-		 playAudio.setImageDrawable(pauseImage);
-		 mPlayer.start();  
-		 audioSeekBar.setEnabled(true);
-		 if(urlAudio.equals(Constant.KALTURA_STREAMING)){
-			 playAudio.setEnabled(false);
-			 audioSeekBar.setEnabled(false);
-		 }
-		 handler.post(seekBarProgressUpdater);
+		play=true;
+		Drawable pauseImage = getResources().getDrawable(R.drawable.pause);
+		playAudio.setImageDrawable(pauseImage);
+		mPlayer.start();
+		audioSeekBar.setEnabled(true);
+		if(urlAudio.equals(Constant.KALTURA_STREAMING)){
+			playAudio.setEnabled(true);
+			audioSeekBar.setEnabled(false);
+		}
+		handler.post(seekBarProgressUpdater);
 	}
-	
-    private void pause(){
 
-    		Drawable playImage = getResources().getDrawable(R.drawable.play);
-        	play=false;
-        	playAudio.setImageDrawable(playImage);
-        	mPlayer.pause();
-        	audioSeekBar.setEnabled(false);
+	private void pause(){
+
+		Drawable playImage = getResources().getDrawable(R.drawable.play);
+		play=false;
+		playAudio.setImageDrawable(playImage);
+		mPlayer.pause();
+		audioSeekBar.setEnabled(false);
 	}
-    
-    private void stop(){
-    	handler.removeCallbacks(seekBarProgressUpdater);
-    	Drawable playImage = getResources().getDrawable(R.drawable.play);
-    	play=false;
-    	playAudio.setImageDrawable(playImage);
-    	mPlayer.stop();
-    	mPlayer.reset();
-    	mPlayer.release();
+
+	private void stop(){
+		handler.removeCallbacks(seekBarProgressUpdater);
+		Drawable playImage = getResources().getDrawable(R.drawable.play);
+		play=false;
+		playAudio.setImageDrawable(playImage);
+		mPlayer.stop();
+		mPlayer.reset();
+		mPlayer.release();
 	}
-    
-    private void next(){
-    	stop();
-    	if(currentList<limitList)
-    		currentList++;
-    	ListProgram listProgram = new ListProgram();
-    	listProgram.setCurrentChapter(listChapter.get(currentList));
-    	setChapter();
-    }
-    
-    private void back(){
-    	stop();
-    	if(currentList>0)
-    		currentList--;
-    	ListProgram listProgram = new ListProgram();
-    	listProgram.setCurrentChapter(listChapter.get(currentList));
-    	setChapter();
-    }
+
+	private void next(){
+		stop();
+		if(currentList<limitList)
+			currentList++;
+		ListProgram listProgram = new ListProgram();
+		listProgram.setCurrentChapter(listChapter.get(currentList));
+		setChapter();
+	}
+
+	private void back(){
+		stop();
+		if(currentList>0)
+			currentList--;
+		ListProgram listProgram = new ListProgram();
+		listProgram.setCurrentChapter(listChapter.get(currentList));
+		setChapter();
+	}
 
 	@Override
 	public void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
 		try{
-		MainActivity.ansyncTask=false;
-		handler.removeCallbacks(seekBarProgressUpdater);	
-		audioManager.abandonAudioFocus(self);
-		stop();
+			MainActivity.ansyncTask=false;
+			handler.removeCallbacks(seekBarProgressUpdater);
+			audioManager.abandonAudioFocus(self);
+			stop();
 		}catch(NullPointerException e){
 			e.printStackTrace();
 		}
-		
+
 	};
-	
- 
-	
+
+
+
 	private final Runnable seekBarProgressUpdater = new Runnable(){
-	    public void run(){
-	        try {
-	            //prepare and send the data here..
-	        	mediaFileLengthInMilliseconds = mPlayer.getDuration();
-	        	textDuration.setText(convertMilliseconds(mediaFileLengthInMilliseconds));
-	        	audioSeekBar.setMax(mediaFileLengthInMilliseconds);
-	        	if(mPlayer.isPlaying()){
-	        		audioSeekBar.setProgress(mPlayer.getCurrentPosition());
-	        		textStart.setText(convertMilliseconds(mPlayer.getCurrentPosition()));
-	        	}
-	        	if(!textStart.getText().toString().equals("00:00")){
-	        		progress.dismiss();
-	        				
-	        	}
-	            handler.postDelayed(this, 1000);    
-	        }
-	        catch (Exception e) {
-	            e.printStackTrace();
-	        }   
-	    }
+		public void run(){
+			try {
+				//prepare and send the data here..
+				mediaFileLengthInMilliseconds = mPlayer.getDuration();
+				textDuration.setText(convertMilliseconds(mediaFileLengthInMilliseconds));
+				audioSeekBar.setMax(mediaFileLengthInMilliseconds);
+				if(mPlayer.isPlaying()){
+					audioSeekBar.setProgress(mPlayer.getCurrentPosition());
+					textStart.setText(convertMilliseconds(mPlayer.getCurrentPosition()));
+				}
+				if(!textStart.getText().toString().equals("00:00")){
+					progress.dismiss();
+
+				}
+				handler.postDelayed(this, 1000);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	};
-	
+
 	private String convertMilliseconds(int milliseconds){
 		String time="00:00";
 		int seconds = (int) (milliseconds / 1000) % 60 ;
@@ -470,7 +439,7 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 			time=formatter.format(minutes)+":"+formatter.format(seconds);
 		}
 		//if(!time.equals("00:00"))
-    		//progressBar.setVisibility(View.GONE);
+		//progressBar.setVisibility(View.GONE);
 		return time;
 	}
 
@@ -485,75 +454,75 @@ public class RadioOnlineFragment extends Fragment implements OnErrorListener,OnA
 	public boolean onError(MediaPlayer mp, int what, int extra) {
 		try{
 			if(builder==null){
-			
+
 				builder = new AlertDialog.Builder(self.getActivity());
 				builder.setMessage("Lo sentimos, no se puede reproducir este audio ")
-				        .setTitle("Error")
-				        .setCancelable(false)
-				        .setPositiveButton(self.getResources().getString(R.string.alert_acept),
-				                new DialogInterface.OnClickListener() {
+						.setTitle("Error")
+						.setCancelable(false)
+						.setPositiveButton(self.getResources().getString(R.string.alert_acept),
+								new DialogInterface.OnClickListener() {
 
 									@Override
 									public void onClick(DialogInterface dialog,
-											int which) {
+														int which) {
 										// TODO Auto-generated method stub
 										dialog.cancel();
 										self.getActivity().finish();
 									}
-				                  
-				                });
+
+								});
 				AlertDialog alert = builder.create();
 				alert.show();
-			
+
 			}
 		}catch(NullPointerException e){
-			
+
 		}
 		return true;
 	}
-	
+
 	private void initAudioManager(){
 		audioManager = (AudioManager) self.getActivity().getSystemService(Context.AUDIO_SERVICE);
-		 int result = audioManager.requestAudioFocus(self,
-		            AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+		int result = audioManager.requestAudioFocus(self,
+				AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
 
-		    switch (result) {
-		        case AudioManager.AUDIOFOCUS_REQUEST_GRANTED:
-		        	isFocusGranted = true;
-		            break;
-		        case AudioManager.AUDIOFOCUS_REQUEST_FAILED:
-		        	isFocusChanged = false;
-		            break;
-		    }
+		switch (result) {
+			case AudioManager.AUDIOFOCUS_REQUEST_GRANTED:
+				isFocusGranted = true;
+				break;
+			case AudioManager.AUDIOFOCUS_REQUEST_FAILED:
+				isFocusChanged = false;
+				break;
+		}
 
-		    String message = "Focus request " + (isFocusGranted ? "granted" : "failed");
-		    Log.i("RADIOUAA", message);
+		String message = "Focus request " + (isFocusGranted ? "granted" : "failed");
+		Log.i("RADIOUAA", message);
 	}
 
 	@Override
 	public void onAudioFocusChange(int focusChange) {
 		// TODO Auto-generated method stub
 		switch (focusChange) {
-        	case AudioManager.AUDIOFOCUS_GAIN:
-        		Log.i("RADIOUAA", "AUDIOFOCUS_GAIN");
-        		break;
-        	case AudioManager.AUDIOFOCUS_LOSS:
-        		Log.i("RADIOUAA", "AUDIOFOCUS_LOSS");
-        		if(urlAudio.equals(Constant.KALTURA_STREAMING))
+			case AudioManager.AUDIOFOCUS_GAIN:
+				Log.i("RADIOUAA", "AUDIOFOCUS_GAIN");
+				break;
+			case AudioManager.AUDIOFOCUS_LOSS:
+				Log.i("RADIOUAA", "AUDIOFOCUS_LOSS");
+				if(urlAudio.equals(Constant.KALTURA_STREAMING))
 					stop();
 				else
 					pause();
-        		break;
-        	case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
-        		Log.i("RADIOUAA", "AUDIOFOCUS_LOSS_TRANSIENT");
-        		break;
-        	case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
-        		Log.i("RADIOUAA", "AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK");
-        		break;
+				break;
+			case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+				Log.i("RADIOUAA", "AUDIOFOCUS_LOSS_TRANSIENT");
+				break;
+			case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
+				Log.i("RADIOUAA", "AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK");
+				break;
 		}
 	}
 
-	
+
 
 
 }

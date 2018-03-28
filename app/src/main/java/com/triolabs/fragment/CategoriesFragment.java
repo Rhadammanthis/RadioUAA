@@ -295,7 +295,7 @@ public class CategoriesFragment extends Fragment {
 			urlBanner= new ArrayList<String>();
 			String[] idBanner =json.getString("playlistContent").split(",");
 			for(int i=0; i<idBanner.length;i++){
-				urlBanner.add("http://kaltura.uaa.mx/p/102/sp/10200/thumbnail/entry_id/"+idBanner[i]+"/def_height/306/def_width/1027/version/100000/type/1");
+				urlBanner.add("https://kaltura.uaa.mx/p/102/sp/10200/thumbnail/entry_id/"+idBanner[i]+"/def_height/306/def_width/1027/version/100000/type/1");
 			}
 			limitBanner=urlBanner.size()-1;
 			handler.post(changeBanner);
