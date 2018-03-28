@@ -1,7 +1,0 @@
-#Wed Mar 28 13:10:26 GMT 2018
-base.0=C\:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ecf27b8d70e1ea1f5832b3812cafa1bb740330ae
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_354ffaf2d53c47517db94e9e9d3d411f221d0982\\classes.dex
-base.1=C\:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_354ffaf2d53c47517db94e9e9d3d411f221d0982
-file.0=C\:\\Users\\hugoe\\Documents\\Projects\\Imported\\RadioUAA\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ecf27b8d70e1ea1f5832b3812cafa1bb740330ae\\classes.dex
